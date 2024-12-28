@@ -15,10 +15,12 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
-        <sonar.projectkey>maventry1</sonar.projectkey>
-        <sonar.sources>src/main/java<sonar.sources>
+        <!-- SonarQube properties -->
+        <sonar.projectKey>maventry1</sonar.projectKey>
+        <sonar.projectName>maven-freestyle</sonar.projectName>
+        <sonar.sources>src/main/java</sonar.sources>
         <sonar.host.url>http://localhost:9000</sonar.host.url>
-        <sonar.login>$(env.SONAR_TOKEN)</sonar.login>
+        <sonar.login>${env.SONAR_TOKEN}</sonar.login>
     </properties>
 
     <dependencies>
@@ -27,12 +29,6 @@
             <artifactId>junit</artifactId>
             <version>4.13.2</version>
             <scope>test</scope>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-compiler-plugin -->
-        <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.8.1</version>
         </dependency>
     </dependencies>
 
