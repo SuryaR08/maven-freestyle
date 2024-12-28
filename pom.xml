@@ -16,6 +16,7 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <sonar.projectkey>maventry1</sonar.projectkey>
+        <sonar.sources>src/main/java<sonar.sources>
         <sonar.host.url>http://localhost:9000</sonar.host.url>
         <sonar.login>$(env.SONAR_TOKEN)</sonar.login>
     </properties>
